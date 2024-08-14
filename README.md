@@ -7,12 +7,13 @@
  Information</title>
   <style>
     body {
-      margin: 0; /* Remove default margin from body */
-      font-family: Arial, sans-serif; /* Optional: change font if needed */
+      font-family: Times New Roman, serif;
+      margin: 0;
+      text-align: left; /* Align text to the left */
     }
 
     p {
-      margin-top: 0; /* Remove default margin from paragraphs */
+      margin: 0;
     }
   </style>
 </head>
