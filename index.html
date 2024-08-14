@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .certificate-container {
+            width: 638px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #000;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container" id="certificate-container">
+        <!-- Certificate details will be loaded here -->
+    </div>
+
+    <script>
+        // Fetch the content from certificate.html.txt and insert it into the div
+        fetch('certificate.html.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('certificate-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the certificate:', error));
+    </script>
+</body>
+</html>
